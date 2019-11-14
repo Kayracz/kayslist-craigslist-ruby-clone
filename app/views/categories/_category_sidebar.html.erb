@@ -2,6 +2,6 @@
 
 <ul>
 <% @category.subcategories.each do |subcategory| %>
-<li><p> <%= subcategory.name %> </p></li>
+<li><p> <%= link_to subcategory.name, category_path(subcategory)%> </p></li>
 <% end %>
 </ul>
